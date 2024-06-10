@@ -60,7 +60,7 @@ def join_duplicate(contacts_list):
 
 
 def safe_file(contacts_list):
-    with open("phonebook.csv", "w", encoding="utf-8") as f:
+    with open("phonebook.csv", "w",newline='', encoding="utf-8") as f:
         datawriter = csv.writer(f, delimiter=',')
         datawriter.writerows(contacts_list)
 
